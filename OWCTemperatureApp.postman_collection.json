@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "f4bb68a9-5dbe-4a0a-bec5-a6a1b1a9b255",
+		"name": "OWCTemperatureApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Temperatures",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/temperature/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temperature",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Temperature",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/temperature/insert?temperature=1.0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temperature",
+						"insert"
+					],
+					"query": [
+						{
+							"key": "temperature",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Temperature",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/temperature/update?id=10&temperature=20.0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temperature",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10"
+						},
+						{
+							"key": "temperature",
+							"value": "20.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Temperature",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/temperature/delete?id=12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temperature",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
